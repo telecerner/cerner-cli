@@ -231,6 +231,7 @@ function create_config( )
 	"supergroup",
 	"whitelist",
 	"msg_checks"
+	"plugins"
     },
     sudo_users = {231427699},--Sudo users
     moderation = {data = 'data/moderation.json'},
