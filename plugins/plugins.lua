@@ -199,22 +199,22 @@
 	description = "Plugin to manage other plugins. Enable, disable or reload.",
 	usage = {
 	moderator = {
-	"!plugins - [plugin] chat : disable plugin only this chat.",
-	"!plugins + [plugin] chat : enable plugin only this chat.",
+	"/plugins - [plugin] chat : disable plugin only this chat.",
+	"/plugins + [plugin] chat : enable plugin only this chat.",
 	},
 	sudo = {
-	"!plugins : list all plugins.",
-	"!plugins + [plugin] : enable plugin.",
-	"!plugins - [plugin] : disable plugin.",
-	"!plugins ? : reloads all plugins." },
+	"/plugins : list all plugins.",
+	"/plugins + [plugin] : enable plugin.",
+	"/plugins - [plugin] : disable plugin.",
+	"/plugins ? : reloads all plugins." },
 	},
 	patterns = {
-	"^!plugins$",
-	"^!plugins? (+) ([%w_%.%-]+)$",
-	"^!plugins? (-) ([%w_%.%-]+)$",
-	"^!plugins? (+) ([%w_%.%-]+) (chat)",
-	"^!plugins? (-) ([%w_%.%-]+) (chat)",
-	"^!plugins? (?)$" },
+	"^/plugins$",
+	"^/plugins? (+) ([%w_%.%-]+)$",
+	"^/plugins? (-) ([%w_%.%-]+)$",
+	"^/plugins? (+) ([%w_%.%-]+) (chat)",
+	"^/plugins? (-) ([%w_%.%-]+) (chat)",
+	"^/plugins? (?)$" },
 	run = run,
 	moderated = true, -- set to moderator mode
 	--privileged = true
